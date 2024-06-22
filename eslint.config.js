@@ -5,6 +5,35 @@ const angular = require("angular-eslint");
   
 module.exports = tseslint.config(
   {
+    ignores: [
+    'dist/',
+    'build/',
+    'node_modules/',
+    '/.angular',
+    '/.vscode',
+    '.env',
+    '.env.local',
+    '.env.development.local',
+    '.env.test.local',
+    '.env.production.local',
+    'coverage/',
+    '.idea/',
+    '*.iml',
+    '*.sublime-project',
+    '*.sublime-workspace',
+    '/.sublime',
+    '*.swp',
+    '*.swo',
+    '*.tmp',
+    '.DS_Store',
+    'logs',
+    '*.log',
+    'npm-debug.log*',
+    'yarn-debug.log*',
+    'angular.json',
+    'tsconfig.json',
+    'tsconfig.*.json'
+  ],
     files: ["**/*.ts"],
     extends: [
       eslint.configs.recommended,
